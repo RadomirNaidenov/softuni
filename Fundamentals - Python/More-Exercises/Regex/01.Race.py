@@ -7,6 +7,7 @@ digits_pattern = re.compile(r'\d')
 runners = {name: 0 for name in names}
 
 
+
 while True:
     command = input()
     if command == "end of race":
@@ -17,7 +18,7 @@ while True:
     current_person_name = ''.join(name_chars)
     kilometres_run = sum(int(digit) for digit in digit_chars)
 
-    if current_person_name in runners:
+    if current_person_name in runners.keys():
         runners[current_person_name] += kilometres_run
 
 sorted_runners = sorted(runners.items(), key=lambda item: item[1], reverse=True)
