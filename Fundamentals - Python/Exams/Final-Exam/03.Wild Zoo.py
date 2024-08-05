@@ -1,9 +1,7 @@
 animals = {}
 area_of_the_animals = {}
-while True:
-    command = input()
-    if command == "EndDay":
-        break
+command = input()
+while command != "EndDay":
 
     action, animal_data = command.split(": ")
 
@@ -20,15 +18,21 @@ while True:
     elif action == "Feed":
         animal_name, food = animal_data.split("-")
         food = int(food)
-        if animal_name in animals.keys():
-            animals[animal_name]["food"] -= food
-            if animals[animal_name]["food"] <= 0:
-                print(f"{animal_name} was successfully fed")
-                area = animals[animal_name]["area"]
-                area_of_the_animals[area] -= 1
-                if area_of_the_animals[area] == 0:
-                    del area_of_the_animals[area]
-                del animals[animal_name]
+        if animal_name not in animals.keys():
+            continue
+
+        animals[animal_name]["food"] -= food
+        if animals[animal_name]["food"] > 0:
+            continue
+
+        print(f"{animal_name} was successfully fed")
+        area = animals[animal_name]["area"]
+        area_of_the_animals[area] -= 1
+        if area_of_the_animals[area] == 0:
+            del area_of_the_animals[area]
+        del animals[animal_name]
+        
+    command = input()
 
 print("Animals:")
 for animal_name, info in animals.items():
