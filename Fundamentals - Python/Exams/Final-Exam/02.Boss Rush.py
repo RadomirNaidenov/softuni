@@ -2,11 +2,10 @@ import re
 
 number_of_inputs = int(input())
 matches_list = []
+pattern = r"\|([A-Z]+)\|\:#([A-Z-a-z]+\s[A-Z-a-z]+)#"
 for _ in range(number_of_inputs):
 
     command = input()
-    pattern = r"\|([A-Z]+)\|\:#([A-Z-a-z]+\s[A-Z-a-z]+)#"
-
     matches = re.findall(pattern, command)
     matches_list.append(matches)
 
