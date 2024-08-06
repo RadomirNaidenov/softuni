@@ -1,1 +1,0 @@
-quantity_of_food = int(input())
