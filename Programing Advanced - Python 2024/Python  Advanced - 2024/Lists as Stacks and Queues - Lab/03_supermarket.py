@@ -16,3 +16,4 @@ while name != "End":
     name = input()
 
 print(f"{len(people)} people remaining.")
+
