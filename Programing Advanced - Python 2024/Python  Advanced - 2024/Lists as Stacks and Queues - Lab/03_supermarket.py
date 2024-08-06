@@ -1,18 +1,18 @@
 from collections import deque
 
 people = deque() 
-command = input()
+name = input()
 
-while command != "End":
+while name != "End":
 
-    if command != "Paid":
-        people.append(command)
-        command = input()
+    if name != "Paid":
+        people.append(name)
+        name = input()
         continue
     
     while people:
         print(people.popleft())
 
-    command = input()
+    name = input()
 
 print(f"{len(people)} people remaining.")
