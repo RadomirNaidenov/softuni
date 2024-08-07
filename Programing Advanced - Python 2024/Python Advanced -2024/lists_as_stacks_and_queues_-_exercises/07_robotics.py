@@ -1,5 +1,6 @@
 from collections import deque
 from datetime import datetime, timedelta
+
 robot_info = {}
 
 for r in input().split(";"):
