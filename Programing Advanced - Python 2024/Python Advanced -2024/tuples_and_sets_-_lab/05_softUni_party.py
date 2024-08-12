@@ -9,6 +9,7 @@ for _ in range(n):
         continue
     regular_guests.append(reservation_code)
 
+
 while True:
     guest = input().strip()
     if guest == "END":
