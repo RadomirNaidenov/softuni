@@ -13,21 +13,17 @@ while command != "END":
     parts = command.split()
 
     if len(parts) == 5 and parts[0] == "swap":
-
-        try:
-            row1, col1, row2, col2 = [int(x) for x in parts[1:]]
-            is_valid = check_coordinates(row1, col1, row2, col2)
-            if not is_valid:
-                print("Invalid input!")
-                command = input()
-                continue
-
-            matrix[row1][col1], matrix[row2][col2] = matrix[row2][col2], matrix[row1][col1]
-            for row in matrix:
-                print(*row)
-
-        except ValueError:
+        row1, col1, row2, col2 = [int(x) for x in parts[1:]]
+        is_valid = check_coordinates(row1, col1, row2, col2)
+        if not is_valid:
             print("Invalid input!")
+            command = input()
+            continue
+
+        matrix[row1][col1], matrix[row2][col2] = matrix[row2][col2], matrix[row1][col1]
+        for row in matrix:
+            print(*row)
+
     else:
         print("Invalid input!")
     command = input()
