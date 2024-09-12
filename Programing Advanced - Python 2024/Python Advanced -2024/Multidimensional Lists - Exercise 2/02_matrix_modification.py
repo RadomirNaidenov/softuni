@@ -30,6 +30,7 @@ while command != "END":
             command = input()
             continue
         add_number(matrix, row, col, value)
+        
     elif command[0] == "Subtract":
         row = int(command[1])
         col = int(command[2])
