@@ -1,3 +1,8 @@
+def valid_index(matrix_size: int, row: int, col: int) -> bool:
+    if 0 <= row < matrix_size and 0 <= col < matrix_size:
+        return True
+    return False
+
 presents = int(input())
 
 matrix_size = int(input())
@@ -28,7 +33,7 @@ while presents > 0:
         break
 
     row, col = santa[0] + possible_directions[command][0], santa[1] + possible_directions[command][1]
-    if 0 <= row < matrix_size and 0 <= col < matrix_size:
+    if valid_index(matrix_size, row, col):
         if matrix[row][col] == "V":
             presents -= 1
             nice_kids_gifted += 1
