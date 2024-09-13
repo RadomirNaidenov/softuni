@@ -7,4 +7,3 @@ def sorting_cheeses(**kwargs):
     
     return "\n".join(result)
 
-
