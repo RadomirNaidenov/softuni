@@ -7,7 +7,6 @@ def create_matrix(matrix_size: int, starting_symbol: str, symbol_after_step: str
             p_row = row
             p_col = row_input.index(starting_symbol)
             row_input[p_col] = symbol_after_step
-        
         matrix.append(row_input)
     
     return matrix, p_row, p_col
