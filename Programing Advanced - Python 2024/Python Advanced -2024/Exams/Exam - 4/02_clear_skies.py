@@ -36,16 +36,14 @@ def main(matrix: list[list[str]], start_row: int, start_col: int, some_enemies: 
 
         if current_block == EMPTY_SPOT:
             continue
-
         if current_block == REPAIR_POINTS:
             current_armor = RESTORE_ARMOR
             matrix[start_row][start_col] = EMPTY_SPOT
         if current_block == ENEMY_AIRCRAFT:
             some_enemies -= 1
             matrix[start_row][start_col] = EMPTY_SPOT
-            if ENEMY_AIRCRAFT not in matrix:
-                if some_enemies:
-                    current_armor -= TAKE_DMG
+            if some_enemies:
+                current_armor -= TAKE_DMG
 
     if not some_enemies:
         print("Mission accomplished, you neutralized the aerial threat!")
