@@ -72,5 +72,7 @@ movements = {
 matrix_size = int(input())
 
 main(
-    *create_matrix_and_find_start(matrix_size)
+    *create_matrix_and_find_start(
+    matrix_size
+    )
 )
