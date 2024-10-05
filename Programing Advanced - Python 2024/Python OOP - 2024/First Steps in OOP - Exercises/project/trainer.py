@@ -6,7 +6,7 @@ class Trainer:
     def __init__(self, name: str):
         self.name = name
         self.pokemons = []
-
+ 
     def add_pokemon(self, pokemon: Pokemon):
         if pokemon in self.pokemons:
             return "This pokemon is already caught"
@@ -25,6 +25,7 @@ class Trainer:
         for item in self.pokemons:
             output.append(f"- {item.pokemon_details()}")
         return '\n'.join(output)
+
 
 # pokemon = Pokemon("Pikachu", 90)
 # print(pokemon.pokemon_details())
