@@ -15,5 +15,7 @@ while command != "Finish":
     total_score += current_presentations_total
     total_grades += judges_count
     command = input()
+
 avg_total_score = total_score / total_grades
 print(f"Student's final assessment is {avg_total_score:.2f}.")
+
