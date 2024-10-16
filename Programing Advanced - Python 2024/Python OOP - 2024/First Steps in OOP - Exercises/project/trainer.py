@@ -1,4 +1,4 @@
-# from project.pokemon import Pokemon
+# from to_do_list_project.pokemon import Pokemon
 from pokemon import Pokemon
 
 
