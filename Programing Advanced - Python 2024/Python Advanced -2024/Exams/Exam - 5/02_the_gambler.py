@@ -24,11 +24,10 @@ def display_matrix(some_matrix: list[list]) -> None:
 def main(some_matrix: list[list], start_row: int, start_col: int) -> None:
 
     current_amount = INITIAL_AMOUNT
-    win_jacpot = False
+    win_jackpot = False
     leave_boundaries = False
 
     while current_amount > 0:
-
 
         direction = input()
 
@@ -50,7 +49,7 @@ def main(some_matrix: list[list], start_row: int, start_col: int) -> None:
         if current_block == "J":
             current_amount += JACKPOT_WIN
             some_matrix[start_row][start_col] = STARTING_POSITION
-            win_jacpot = True
+            win_jackpot = True
             break
         elif current_block == EMPTY_POSITION:
             continue
@@ -61,14 +60,13 @@ def main(some_matrix: list[list], start_row: int, start_col: int) -> None:
             
         some_matrix[start_row][start_col] = EMPTY_POSITION
 
-
     some_matrix[start_row][start_col] = STARTING_POSITION
 
-    if win_jacpot:
+    if win_jackpot:
         print("You win the Jackpot!")
         print(f"End of the game. Total amount: {current_amount}$")
         display_matrix(some_matrix) 
-    elif not win_jacpot and not leave_boundaries and current_amount >= 0:
+    elif not win_jackpot and not leave_boundaries and current_amount >= 0:
         print(f"End of the game. Total amount: {current_amount}$")
         display_matrix(some_matrix) 
     if leave_boundaries or current_amount <= 0:
@@ -95,6 +93,6 @@ movements = {
 
 main(
     *create_and_fine_start(
-    int(input())
+        int(input())
     )
 )
