@@ -46,7 +46,6 @@ def main(matrix: list[list[str]], start_row: int, start_col: int) -> None:
             current_health = min(current_health + HEALTH_AMOUNT, MAX_HEALTH)
             matrix[start_row][start_col] = EMPTY_SPOT
 
-
     matrix[start_row][start_col] = STARTING_POSITION    
 
     if current_health <= 0:
@@ -59,6 +58,7 @@ def main(matrix: list[list[str]], start_row: int, start_col: int) -> None:
     for row in matrix:
         print("".join(row))
 
+
 STARTING_POSITION = "P"
 EXIT_FROM_MATRIX = "X"
 MONSTER = "M"
@@ -68,7 +68,6 @@ INITIAL_HEALTH = 100
 MAX_HEALTH = 100
 HEALTH_AMOUNT = 15
 MONSTER_DMG = 40
-
 
 
 movements = {
