@@ -30,7 +30,6 @@ while command != "END":
         break
 
     green_light_duration = green_light
-     
 
     if is_crashed:
         break
