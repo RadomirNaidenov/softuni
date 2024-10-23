@@ -6,7 +6,7 @@ def cookbook(*args):
         
         cookbook_data[country][recipe] = ingredient
 
-        output = []
+    output = []
     for country, recipes in sorted(cookbook_data.items(), key=lambda x: (-len(x[1]), x[0])):
         output.append(f"{country} cuisine contains {len(cookbook_data[country])} recipes:")
 
