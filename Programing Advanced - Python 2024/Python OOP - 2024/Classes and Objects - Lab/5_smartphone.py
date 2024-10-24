@@ -22,6 +22,7 @@ class Smartphone:
     def status(self):
         return f"Total apps: {len(self.apps)}. Memory left: {self.memory}"
 
+
 smartphone = Smartphone(100)
 print(smartphone.install("Facebook", 60))
 smartphone.power()
