@@ -5,7 +5,7 @@ class Glass:
         self.content = 0 
 
     def fill(self, ml) -> str:
-        if self.content + ml > Glass.capacity:
+        if (self.content + ml) > Glass.capacity:
             return f"Cannot add {ml} ml"
         
         self.content += ml
