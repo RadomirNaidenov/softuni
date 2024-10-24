@@ -4,9 +4,6 @@ class Vehicle:
         self.mileage = mileage
         self.max_speed = max_speed
         self.gadgets: list[str] = []
-        
-
-
 
 
 car = Vehicle(20)
