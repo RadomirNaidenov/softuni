@@ -38,6 +38,3 @@ class Rectangle(Shape):
         return self.__height * 2 + self.__width * 2
 
 
-rectangle = Rectangle(10, 20)
-print(rectangle.calculate_area())
-print(rectangle.calculate_perimeter())
