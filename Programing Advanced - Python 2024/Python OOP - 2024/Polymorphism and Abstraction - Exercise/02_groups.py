@@ -5,7 +5,6 @@ class Person:
         self.surname = surname
 
     def __repr__(self) -> str:
-        # return self.name + " " + self.username
         return f"{self.name} {self.surname}"
 
     def __add__(self, other):
