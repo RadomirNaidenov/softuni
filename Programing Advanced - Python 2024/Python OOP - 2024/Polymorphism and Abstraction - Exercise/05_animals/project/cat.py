@@ -1,5 +1,5 @@
 from project.animal import Animal
-from abc import ABC, abstractmethod
+from abc import ABC
 
 
 class Cat(Animal, ABC):
