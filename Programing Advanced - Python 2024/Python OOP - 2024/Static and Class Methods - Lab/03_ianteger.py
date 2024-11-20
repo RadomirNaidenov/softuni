@@ -5,9 +5,11 @@ class Integer:
 
     @classmethod
     def from_float(cls, float_value: float):
-        if not isinstance(float_value, float):
-            return "value is not a float"
-        return cls(float_value)
+        if isinstance(float_value, float):
+            return cls(int(float_value))
+            
+        return "value is not a float"
+    
     
     @classmethod
     def from_roman(cls, value):
@@ -37,7 +39,5 @@ class Integer:
             return cls(int(value))
         return "wrong type"
         
-Integer(1)
-integer = Integer.from_float(2.5)
-Integer.from_float("2.5")
+
         
