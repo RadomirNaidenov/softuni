@@ -1,6 +1,6 @@
-# from project.dough import Dough
-# from project.pizza import Pizza
-# from project.topping import Topping
+# from project1_2.dough import Dough
+# from project1_2.pizza import Pizza
+# from project1_2.topping import Topping
 #
 #
 # tomato_topping = Topping("Tomato", 60)
