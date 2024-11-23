@@ -1,6 +1,6 @@
-# from project.library import Library
-# from project.user import User
-# from project.registration import Registration
+# from project1_2.library import Library
+# from project1_2.user import User
+# from project1_2.registration import Registration
 #
 # user = User(12, 'Peter')
 # library = Library()
