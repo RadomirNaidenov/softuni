@@ -1,5 +1,5 @@
-# from project.player import Player
-# from project.team import Team
+# from project1_2.player import Player
+# from project1_2.team import Team
 #
 #
 # p = Player("Pall", 1, 3, 5, 7)
