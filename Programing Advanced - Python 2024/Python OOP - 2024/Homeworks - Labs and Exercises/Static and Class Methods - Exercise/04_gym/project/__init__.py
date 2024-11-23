@@ -1,9 +1,9 @@
-# from project.customer import Customer
-# from project.equipment import Equipment
-# from project.exercise_plan import ExercisePlan
-# from project.gym import Gym
-# from project.subscription import Subscription
-# from project.trainer import Trainer
+# from project1_2.customer import Customer
+# from project1_2.equipment import Equipment
+# from project1_2.exercise_plan import ExercisePlan
+# from project1_2.gym import Gym
+# from project1_2.subscription import Subscription
+# from project1_2.trainer import Trainer
 #
 # customer = Customer("John", "Maple Street", "john.smith@gmail.com")
 # equipment = Equipment("Treadmill")
