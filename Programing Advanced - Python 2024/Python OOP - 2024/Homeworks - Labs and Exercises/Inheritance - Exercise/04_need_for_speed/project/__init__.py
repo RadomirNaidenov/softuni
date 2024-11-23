@@ -1,5 +1,5 @@
-# from project.family_car import FamilyCar
-# from project.vehicle import Vehicle
+# from project1_2.family_car import FamilyCar
+# from project1_2.vehicle import Vehicle
 #
 # vehicle = Vehicle(50, 150)
 # print(Vehicle.DEFAULT_FUEL_CONSUMPTION)
