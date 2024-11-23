@@ -1,10 +1,10 @@
 # import unittest
 #
-# from project.animal import Animal
-# from project.cat import Cat
-# from project.dog import Dog
-# from project.kitten import Kitten
-# from project.tomcat import Tomcat
+# from project1_2.animal import Animal
+# from project1_2.cat import Cat
+# from project1_2.dog import Dog
+# from project1_2.kitten import Kitten
+# from project1_2.tomcat import Tomcat
 #
 #
 # class Tests(unittest.TestCase):
