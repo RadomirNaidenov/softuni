@@ -2,7 +2,6 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Programing Advanced - Python 2024/Python OOP - 2024/Exams/Python OOP Regular Exam - 10 August 2024" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Programing Advanced - Python 2024/Python OOP - 2024/Exams/Python OOP Retake Exam - 14 August 2024/1_2_solution" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
