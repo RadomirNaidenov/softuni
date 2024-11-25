@@ -7,7 +7,6 @@ class RoyalZone(BaseZone):
     def __init__(self, code: str):
         super().__init__(code, self.INITIAL_VOLUME)
 
-        # add a custom property to avoid type checking
         self.zone_type = 'RoyalZone'
 
     def zone_info(self):
