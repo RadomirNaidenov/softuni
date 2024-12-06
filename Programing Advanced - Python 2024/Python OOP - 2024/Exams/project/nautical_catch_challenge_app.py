@@ -5,7 +5,6 @@ from project.fish.predatory_fish import PredatoryFish
 
 
 class NauticalCatchChallengeApp:
-
     def __init__(self):
         self.divers = []
         self.fish_list = []
@@ -13,16 +12,16 @@ class NauticalCatchChallengeApp:
     @property
     def valid_divers(self):
         return {
-                "FreeDiver": FreeDiver,
-                "ScubaDiver": ScubaDiver
-                }
+            "FreeDiver": FreeDiver,
+            "ScubaDiver": ScubaDiver
+        }
 
     @property
     def valid_fishes(self):
         return {
-                "PredatoryFish": PredatoryFish,
-                "DeepSeaFish": DeepSeaFish
-               }
+            "DeepSeaFish": DeepSeaFish,
+            "PredatoryFish": PredatoryFish
+        }
 
     @staticmethod
     def get_object(item: str, attribute: str, collection: list):
@@ -40,7 +39,7 @@ class NauticalCatchChallengeApp:
         if diver:
             return f"{diver_name} is already a participant."
 
-        diver = self.valid_divers[diver_name](diver_name)
+        diver = self.valid_divers[diver_type](diver_name)
         self.divers.append(diver)
 
         return f"{diver_name} is successfully registered for the competition as a {diver_type}."
@@ -54,7 +53,6 @@ class NauticalCatchChallengeApp:
             return f"{fish_name} is already permitted."
 
         fish = self.valid_fishes[fish_type](fish_name, points)
-
         self.fish_list.append(fish)
 
         return f"{fish_name} is allowed for chasing as a {fish_type}."
@@ -72,14 +70,16 @@ class NauticalCatchChallengeApp:
             return f"{diver_name} will not be allowed to dive, due to health issues."
 
         if diver.oxygen_level < fish.time_to_catch:
+            diver.miss(fish.time_to_catch)
             return f"{diver_name} missed a good {fish_name}."
 
         if diver.oxygen_level == fish.time_to_catch:
             if is_lucky:
                 diver.hit(fish)
                 return f"{diver_name} hits a {fish.points}pt. {fish_name}."
-
-            diver.miss(fish.time_to_catch)
+            elif not is_lucky:
+                diver.miss(fish.time_to_catch)
+                return f"{diver_name} missed a good {fish_name}."
 
         if diver.oxygen_level > fish.time_to_catch:
             diver.hit(fish)
@@ -87,7 +87,6 @@ class NauticalCatchChallengeApp:
 
     def health_recovery(self):
         divers_recovered = 0
-
         for diver in self.divers:
             if not diver.has_health_issue:
                 continue
@@ -101,7 +100,7 @@ class NauticalCatchChallengeApp:
     def diver_catch_report(self, diver_name: str):
         diver = self.get_object(diver_name, "name", self.divers)
 
-        output = [f"**{diver_name} Catch Report**"]
+        output = [f"**{diver_name} Catch Report**", ]
         for fish in diver.catch:
             output.append(fish.fish_details())
 
@@ -109,6 +108,7 @@ class NauticalCatchChallengeApp:
 
     def competition_statistics(self):
         output = ["**Nautical Catch Challenge Statistics**", ]
+
         sorted_divers = sorted(self.divers, key=lambda d: (-d.competition_points, -len(d.catch), d.name))
         for diver in sorted_divers:
             if diver.has_health_issue:
@@ -117,12 +117,3 @@ class NauticalCatchChallengeApp:
             output.append(diver.__str__())
 
         return "\n".join(output)
-
-
-
-
-
-
-
-
-
