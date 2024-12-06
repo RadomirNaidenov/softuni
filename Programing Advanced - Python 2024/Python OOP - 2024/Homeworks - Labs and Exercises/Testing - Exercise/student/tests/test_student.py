@@ -67,6 +67,7 @@ class StudentTest(TestCase):
 
         self.assertEqual(expected, str(ex.exception))
 
+
 if __name__ == "__main__":
     main()
 
