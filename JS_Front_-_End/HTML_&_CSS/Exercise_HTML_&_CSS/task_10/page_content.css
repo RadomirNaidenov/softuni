@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+section {
+    margin-left: 20px;
+}
+
+section > p {
+    font-size: 24px;
+
+}
