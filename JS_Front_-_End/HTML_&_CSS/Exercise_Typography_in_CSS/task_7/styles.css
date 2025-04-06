@@ -1,0 +1,36 @@
+/* TODO: style the html */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Orienta&family=Righteous&display=swap');
+
+
+body {
+    background-color: darkred;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: #DFBF84;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-family: Orienta, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f6f6f6;
+    text-align: center;
+}
