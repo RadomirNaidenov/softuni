@@ -1,0 +1,37 @@
+body {
+    margin: 80px
+}
+
+header {
+    border-bottom: solid 3px black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    display: inline-block;   
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    display: block;
+    padding: 0 0.4em;
+    text-decoration: none;
+    color: #00ba37;
+}
+
+p {
+    line-height: 1.5;
+}
+
+nav {
+    position: absolute;
+    bottom: 10px;
+    left: 14em;
+}
