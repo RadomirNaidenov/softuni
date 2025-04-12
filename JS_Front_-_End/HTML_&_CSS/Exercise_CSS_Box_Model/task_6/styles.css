@@ -1,12 +1,13 @@
 body {
-    margin: 80px
+    margin: 80px;
+    position: relative;
 }
 
 header {
     border-bottom: solid 3px black;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: inherit;
     font-family: Helvetica, sans-serif;
 }
 
@@ -34,4 +35,5 @@ nav {
     position: absolute;
     bottom: 10px;
     left: 14em;
+    /* top: 500px; */
 }
