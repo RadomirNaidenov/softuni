@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 50%;
+    background-color: #edecec;
+}
+
+
+i {
+    color: black;
+}
+
+i:hover {
+    color: rgb(46, 108, 241);
+}
