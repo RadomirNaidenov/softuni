@@ -1,0 +1,45 @@
+.gallery {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.gallery figure,
+.gallery li,
+.gallery span,
+.gallery a {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.gallery li {
+    flex: 0 0 200px;
+    border: 3.5px solid #000;
+    background-color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 1em;
+}
+
+.gallery figure {
+    justify-content: center;
+}
+
+.gallery span {
+    justify-content: center;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: #999;
+}

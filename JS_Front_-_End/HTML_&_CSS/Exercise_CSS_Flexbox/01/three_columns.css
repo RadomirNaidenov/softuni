@@ -1,0 +1,39 @@
+.container {
+    max-width: 900ch;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.2);
+}
+
+hr {
+    max-width: 10ch;
+    margin: 2em auto;
+    border: 1.2px solid #ccc;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+header p,
+footer p {
+    color: #888;
+}
+
+header p {
+    font-style: italic;
+    max-width: 50ch;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+main {
+    display: flex; 
+    gap: 2em; 
+}
+
