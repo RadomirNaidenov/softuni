@@ -1,0 +1,84 @@
+.keyboard {
+    position: relative;
+    background-color: #dedcdc;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.4em 0 0 rgb(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 1px solid #a4a3a3;
+}
+
+.row-one, 
+.row-two, 
+.row-three, 
+.row-four, 
+.row-five {
+    padding-bottom: 1em;
+}
+
+article {
+    display: flex;
+    gap: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+article.row-one{
+    padding-top: 1.5em;
+    
+}
+
+article.row-six {
+    padding-bottom: 1.5em;
+}
+
+article.row-one button, 
+.backspace, 
+.tab-key,
+.enter-keys,
+.capsLock-key,
+.shift-keys,
+.control-keyw,
+.widows-keys,
+.alt-keys{
+    background: #e5e3e3;
+}    
+
+
+button {
+    padding: 1em 1.5em;
+    border-radius: 4px;
+    background-color: #f6f4f4;
+    border: 1px solid #bebcbc;
+    box-shadow: 0 0.2em 0 0 rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.backspace {
+    flex-grow: 4;
+}
+
+.tab-key {
+    flex-grow: 3;
+}
+
+.enter-keys {
+    flex-grow: 6;
+}
+
+.shift-keys {
+    flex-grow: 5;
+}
+
+.capsLock-key {
+    flex-grow: -1;
+}
+
+.space-keys {
+    flex-grow: 11;
+}
