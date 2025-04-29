@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100dvh;
+}
+
+.container {
+    max-width: 80em;
+    display: flex;
+    background: #fff;
+    padding: 2em;
+    gap: 2em;
+}
+
+aside {
+    flex: 1;
+    border: 2px solid #bbbbbb;
+    border-radius: 5px;
+    width: 80em;
+    background-color: rgb(239, 239, 239);
+}
+
+button {
+    font-weight: bold;
+    margin-right: 1em;
+    height: 2.8em;
+    padding: 0.5em;
+    width: 8em;
+    border-radius: 6px;
+    border: 1px solid #fff;
+}
+
+button.purpple {
+    color: #fff;
+    background-color: rgb(135, 17, 135);
+}
+
+button.grey {
+    background-color: rgb(239, 239, 239);
+}
+
+header h3 {
+    color: #a5a4a4;
+}
+
+header h1 {
+    font-size: 2em;
+    padding-bottom: 0.4em;
+}
+
+main p {
+    color: rgb(114, 114, 114);
+    padding-bottom: 1em;
+}
+
+article {
+    flex: 2;
+}

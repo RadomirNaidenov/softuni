@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(208, 100%, 97%);
+    padding: 2em;
+    line-height: 1.5rem;
+}
+
+header {
+    padding-bottom: 2em;
+}
+
+p {
+    padding-bottom: 2em;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+footer {
+    padding-top: 2em;
+}
+
+
