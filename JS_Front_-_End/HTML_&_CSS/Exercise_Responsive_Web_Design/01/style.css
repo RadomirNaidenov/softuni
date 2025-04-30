@@ -1,0 +1,40 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2em;
+    background-color: #ddd;
+}
+
+
+.site-container {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.3em 0 rgb(0, 0, 0, 0.3);
+    max-width: 900px;
+}
+
+.site-container p {
+    border: 1px solid #999;
+    padding: 2em;
+}
+
+.site-container .main-content {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 1em 0;
+}
+
+.site-container .main-content > p {
+    flex: 1 1 350px;
+}
+
+.site-container .main-content p:last-child {
+    flex: 1 1 100px
+}

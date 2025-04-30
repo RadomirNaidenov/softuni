@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-size: 12px;
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 1em;
+    background-color: #ddd;
+}
+
+.site-header header {
+    padding: 0;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: rgb(16, 173, 16);
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-header h1 {
+    padding: 2rem;
+}
+
+.site-main h2 {
+    font-size: 1.6rem;
+}
+
+.site-container {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0.5em;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+.site-container nav {
+    background-color: #555;
+    color: #fff;
+}
+
+.site-container ul {
+    padding: 0;
+}
+
+.site-header nav ul li,
+.site-header nav ul a {
+    display: block;
+}
+
+.site-header nav a {
+    padding: 1em 1.5em;
+    
+    text-decoration: none;
+}
+
+.site-main,
+.content-aside {
+    padding: 2em;
+}
+
+.site-footer {
+    color: #ddd;
+    background-color: #555;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 999px) {
+    .site-header nav ul li + li a {
+        border-top: 1px solid #999;
+    }
+
+    .site-header nav a {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .site-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .site-header nav ul {
+        display: flex;
+    }
+
+    .site-header nav ul li {
+        flex: 1 1 auto
+    }
+
+    .site-content {
+        display: flex;
+    }
+
+}
