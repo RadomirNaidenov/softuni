@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    margin: 3em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2.5em;
+    border: 2px solid #dbd6d6;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    background-color: rgb(240, 238, 234);
+}
+
+.timeline{
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #dbd6d6;
+    border-radius: 0.3em;
+    width: 800px;
+    margin-bottom: 2em;
+}
+
+.timeline-items {
+    flex-direction: column;
+    gap: 2em;
+}
+
+.timeline-items article {
+    gap: 1em;
+    align-items: start;
+    display: flex;
+    background-color: #fff;
+    max-width: 45%;
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+}
+
+.timeline-items article::before {
+    flex-basis: 2em;
+    flex-shrink: 0;
+    display: block;
+    content: '';
+    width: 2em;
+    aspect-ratio: 1/1;
+    background-color: orange;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.timeline-items article:nth-child(odd) {
+    margin-left: 50%;
+}
+
+.timeline-items article:nth-child(even)::before {
+        background-color: #0C0;
+}
+
+
