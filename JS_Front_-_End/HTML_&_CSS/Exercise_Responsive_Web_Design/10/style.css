@@ -1,0 +1,212 @@
+.site-container {
+    padding: 1em;
+    margin: 2em 2em;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.site-container .avatar img {
+    flex-grow: 1;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 0.3em;
+    border: 1px solid #d1d1d1;
+    position: relative;
+}
+
+.site-container .avatar {
+    position: relative;
+}
+
+.site-container .avatar::before {
+    opacity: 0.8;
+    padding: 0.5em;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 1.3em;
+    left: 57%;
+    border-radius: 0.3em;
+    content: 'Онлайн Курс (На живо)';
+    display: block;
+    background-color: rgb(54, 220, 123);
+    width: 11em;
+    font-size: 9px;
+
+
+}
+
+.site-container .avatar::after {
+    height: auto;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    content: url('images/avatar.jpg');
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    top: 4.8em;
+    right: -0.2em;
+    overflow: hidden;
+    width: 3.5em;
+    background-position: center;
+    clip-path: inset(0 5% 0 0);
+}
+
+.site-container .fisrt-course-description {   
+    padding-bottom: 0;
+    left: 0.9em;
+    bottom: 1.8em;
+    border-radius: 5px;
+    height: 100%;
+    width: 90%;
+    position: relative;
+    background-color: #fff;
+}
+
+.fisrt-course-description header h1 {
+    padding: 0.2em 0.6em;
+    margin: 0.2em;
+    font-size: 1em;
+}
+
+.fisrt-course-description::before {
+    padding: 0.1em 0;
+    content: 'David Core';
+    position: absolute;
+    padding-left: 1em;
+    width: 100px;
+    bottom: 4.7em;
+    left: 5.4em;
+    font-size: 17px;
+    background-color: #fff;
+    box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+
+.fisrt-course-description p {
+    font-weight: 450;
+    font-size: 12px;
+    padding: 0 0.5em;
+    margin: 0.2em;
+    text-align: start;
+}
+
+.fisrt-course-description hr {
+    margin: 0 0.7em;
+    height: 0.01em;
+    background-color: rgb(209, 208, 208);
+    border-color: #ececec;
+}
+
+.categories {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories .look-all,
+.categories .groups {
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+.categories .groups {
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+}
+
+.categories .look-all {
+    color: rgb(54, 220, 123);;
+}
+
+
+
+.first-schedule-container,
+.second-schedule-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0 0.7em 1em;
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 1em;
+}
+
+
+.time-info {
+    display: flex;
+    gap: 1em;
+}
+
+.start-end {
+    display: flex;
+    gap: 3em;
+    font-size: 0.9em;
+
+}
+.start-end p {
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.start-time p {
+    padding-top: 0.3em;
+    margin: 0;
+    font-size: 14px;
+}
+
+.start-time {
+    display: flex;
+    gap: 0.2em;
+
+}
+.end-time {
+    display: flex;
+    gap: 0.5em;
+}
+
+.end-time p {
+    padding-top: 0.3em;
+    margin: 0;
+    font-size: 14px;
+}
+
+.time-info .price {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    left: 0.5em;
+    bottom: 0.2em;   
+}
+
+.footer .course-info {
+    box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.2);
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    padding: 1em;
+    gap: 0.4em;
+}
+
+.footer .course-info p {
+    padding-top: 0.5em;
+    font-size: 15px;
+}
+
+.footer .course-info i,
+.footer .course-info h2,
+.footer .course-info p {
+    margin: 0;
+    color: rgb(54, 220, 123);
+}
+
