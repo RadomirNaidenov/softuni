@@ -1,0 +1,37 @@
+ html {
+    font: 14px/1.5 Lato, sans-serif;
+ }
+
+body, input, select, textarea option {
+    font: inherit;
+}
+
+body {
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+code {
+    display: block;
+    padding: 2em;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    Border: 1px solid #ccc;
+    overflow: auto;
+    background-color: #ddd;
+}
+
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+input:focus {
+    border-color: #090;
+}
