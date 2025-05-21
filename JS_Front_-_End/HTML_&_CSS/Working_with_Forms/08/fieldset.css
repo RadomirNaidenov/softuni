@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+     
+}
+
+div {
+    display: flex;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    box-shadow: 0.2em 0.1em 0 0 rgb(0, 0, 0, 0.1);
+
+}
+
+fieldset legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 0.5em;
+    margin: 0 5em;
+    box-shadow: 0 0 0.3em 0 rgb(0, 0, 0, 0.3);
+    color: rgb(13, 80, 139);
+}
+
+fieldset p input {
+    box-shadow: 0 0 5px rgb(239, 182, 77);
+    border: 2px solid rgb(239, 182, 77);
+    display: block;
+    margin: 1.5em 1.3em;
+    padding: 0.7em 1em;
+    min-width: 20em;
+    border-radius: 0.3em;
+}
+
+fieldset p label {
+    color: rgb(13, 80, 139);
+    box-shadow: 0 0 0.3em 0 #ccc;
+    margin: 0 6.3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+fieldset input[type="submit"] {
+    box-shadow: 0 0 0.3em 0 rgb(0, 0, 0, 0.3);
+    display: block;
+    min-width: 7em;
+    padding: 0.4em 0.4em;
+    margin: 2em 9em 1.6em;
+    background-color: rgb(110, 159, 249);
+    border-radius: 0.2em;
+    border-color: rgb(32, 90, 148);
+    color: rgb(231, 231, 231);
+    font-weight: bold;
+}
+
+fieldset p input[type="text"]:focus, 
+fieldset p input[type="password"]:focus
+{
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+fieldset input[type="submit"]:hover {
+    color: #fff;
+    background-color: #369;
+    transition: all 0.3s ease-in-out;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    cursor: pointer;
+}
+
+
+fieldset p label:hover {
+    color: rgb(240, 178, 62);
+    transition: all 0.3s ease-in-out;
+}
