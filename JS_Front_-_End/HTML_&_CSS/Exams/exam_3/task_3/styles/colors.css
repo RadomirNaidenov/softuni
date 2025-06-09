@@ -1,0 +1,17 @@
+:root {
+    
+    --default-text-color: #FFFCF7;
+    --primary-text-color: #352B2A;
+    --buttons-text-color: #000000;
+    --footer-text-color: #76543E;
+    --footer-primary-text-color: #5F5252;
+
+
+    --primary-button-bg-color: #FAD87A;
+    --default-button-bg-color: #FFFFFF;
+
+    --main-section-bg-color: #F8F0E9;
+    --support-section-bg-color: #E14747;
+    --footer-bg-color: #352B2A;
+
+}

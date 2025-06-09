@@ -1,0 +1,57 @@
+.site-header .site-title a {
+    display: block;
+    width: 120px;
+    height: 70px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url("../images/logo.webp");
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.site-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.site-header nav ul li a {
+    display: block;
+    padding: 0 1em;
+}
+
+.main-section .articles-media .button {
+    margin-top: 2.5em;
+    display: block;
+    padding: 0.4em 1em;
+    background:  #FFFFFF;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 4px;
+}
+
+.support-section .container .primary-button {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 1em 1.5em;
+    background-color: var(--primary-button-bg-color);
+    border-radius: 50px;
+    color: var(--primary-text-color);
+}
+
+.site-footer .footer-container .footer-title{
+    display: block;
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+    text-indent: -200vw;
+    background-image: url("../images/logo.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.site-footer .footer-container .colored-footer-text {
+    color: var(--footer-primary-text-color);
+    padding-top: 2em;
+}
+
+

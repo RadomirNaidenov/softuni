@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+html {
+    height: 100%;
+    font: 18px/1.5 'Karla', sans-serif;
+    color: var(--default-text-color);
+}
+
+.primary-text {
+    font: 16px/1.5 "Cormorant Infant", serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.big-text {
+    font: 90px/1.5 "Cormorant Infant", serif;
+}
+
+.colored-text {
+    color: var(--primary-text-color);
+}
+
+.site-header nav ul li a {
+    color: var(--default-text-color);
+}
+
+
+

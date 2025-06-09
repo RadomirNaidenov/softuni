@@ -1,0 +1,74 @@
+@media (width <=600px) {
+    body {
+        text-align: center;
+
+    }
+
+    header {
+        padding-top: 3em;
+    }
+
+    header nav {
+        display: block;
+        margin-left: 0;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header .header-title {
+        padding: 1.5em 0;
+    }
+
+    header .header-title h1 {
+        font-size: 35px;
+    }
+
+    .choose-us ul {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+
+    }
+
+    .choose-us ul li {
+        margin-bottom: 1.5em;
+    }
+
+    .about-us p:nth-last-child(1) {
+        width: 100%;
+    }
+
+    .team-description-wrapper {
+        width: 100%;
+        padding-bottom: 7em;
+    }
+
+    .team-description-wrapper > p:first-of-type {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .team-description-wrapper ul {
+        justify-content: center;
+        gap: 5em;
+
+    }
+
+    .team-description-wrapper ul li {
+        max-width: 170px;
+        
+    }
+
+    .team-description-wrapper ul li img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .team-description-wrapper ul li p {
+        text-align: center;
+    }
+
+}

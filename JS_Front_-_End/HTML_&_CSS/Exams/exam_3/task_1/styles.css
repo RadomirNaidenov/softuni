@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background: #85DCFF;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 3.375em auto;
+    display: flex;
+    max-height: 500px;
+    gap: 4em;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content header h1 {
+    font-size: 43px;
+    max-width: 400px;
+    font-weight: bold;
+    padding-bottom: 0.73em;
+    color: #270000;
+}
+
+.main-content p {
+    color: #270000;
+}
+
+.main-content p:nth-last-child(2) {
+    padding-bottom: 1.5em;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: #FFFFFF;
+    border-radius: 0.3em;
+    color: #000000;
+}
+
+.buttons a.primary {
+    background-color: #42AA59;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease
+}
+
+.buttons a.primary:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.media img {
+    border-radius: 0.1em;
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 3);
+}
+
+
+
