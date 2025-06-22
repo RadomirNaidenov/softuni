@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul ol {
+    list-style: none;
+}
+
+img, a, li{
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 320px;
+    height: auto;
+    border-radius: 0.5em;
+}

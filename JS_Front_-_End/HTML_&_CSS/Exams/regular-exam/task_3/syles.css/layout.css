@@ -1,0 +1,245 @@
+body {
+    background-color: #0B0B0B;;
+    background-image: url("../img/movies/city-under-the-fire-bg.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.site-section {
+    background-color: #0B0B0B;;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+}
+
+.inner {
+    padding-left: 1.5em;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.site-section p, .main-image-section p, .site-section a, .site-footer p {
+    color : #FFFFFF;
+}
+
+.header-section .header-container {
+    padding: 1.4em 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section .header-container .site-logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header-section .header-container ul {
+    display: flex;
+    gap: 2em;
+}
+
+.site-section .inner content {
+    margin: 0 1em;
+}
+
+.main-image-section .inner {
+    padding: 7em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image-section .inner .future-content {
+    max-width: 800px;
+    line-height: 1.4;
+}
+
+.main-image-section .inner {
+    padding-left: 3em;
+}
+
+.future-content h1 {
+    font-size: 3.5em;
+}
+
+.future-content p {
+    padding: 0.8em 0;
+    font-size: 1.2em;
+
+}
+
+p.primary-text {
+    color: #CCCCCC
+}
+
+.movie-description p.unique-text {
+    color: #E50914
+
+}
+
+.movie-description h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 0.2em;
+}
+
+.movie-description .film-genres {
+   display: flex;
+   gap: 1em;
+   padding-bottom: 0.5em;
+}
+
+.movie-description .film-genres p {
+    background-color: #3E2E1B;
+    opacity: 0.7;
+    padding: 0.2em 0.3em;
+    font-size: 0.8em;
+    border-radius: 2em;
+}
+
+.inner > p.primary-text {
+    padding-bottom: 2.3em;
+}
+
+.inner .button {
+    background-color: #E50914;
+    max-width: 180px;
+    padding: 1em 2em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 0.5em;
+}
+
+
+.site-section .inner h4 {
+    font-size: 1.7em;
+    padding: 2em 0 1em 0em;
+}
+
+.site-section .inner .cont-watch .effect {
+    display: flex;
+}
+
+.site-section .inner .cont-watch .red {
+    width: 130px;
+    background-color: #E50914;
+    text-indent: -9000099px;
+    height: 0.3em;
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+   
+}
+
+.site-section .inner .cont-watch p {
+    z-index: 0;
+    background-color: #333333;
+    width: 190px;
+    height: 0.3em;
+    text-indent: -99999px;
+    border-bottom-right-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+
+
+.site-section .recommended-movies {
+    display: flex;
+    gap: 2em;
+}
+
+.site-section .comming-soon-card {
+    padding: 1.5em;
+    display: flex;
+    gap: 1.5em;
+    background-color: #1A1A1A;
+}
+
+.site-section .comming-soon-card img {
+    width: 200px;
+}
+
+.site-section .comming-soon-card .aside-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    gap: 0.2em;
+}
+
+.site-section .comming-soon-card .aside-content .primary-text {
+    padding-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.site-section .comming-soon-card .button {
+    padding: 0.7em 1em;
+}
+
+.browse-by-genre-section h2 {
+    padding: 1em 0em;
+}
+
+
+.browse-by-genre-section hr {
+    width: 100%;
+}
+
+.browse-by-genre-section .genres {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.browse-by-genre-section .genres .actions {
+    padding-bottom: 3em;
+    margin: 0 auto;
+    display: flex;
+    gap: 2em;
+}
+
+.browse-by-genre-section .genres .actions .action img {
+    padding: 0.5em;
+    aspect-ratio: 1/1;
+    width: 60px;
+    background-color: #111111;
+    border-radius: 50%;
+}
+
+.browse-by-genre-section .genres .actions .action p {
+    padding-top: 1em;
+    padding-left: 0.1em;
+}
+
+.site-footer .register-container {
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8em;
+}
+
+.site-footer .register-container p {
+    padding-bottom: 0.8em;
+    font-size: 1.2em;
+}
+
+.site-footer .register-container h2 {
+    font-size: 1.8em;
+}
+
+.site-footer .register-container .button {
+    color: #FFFFFF;
+    background-color: #E50914;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 1em 1.5em;
+    border-radius: 0.5em;
+}
+
+
+
+
+
+
+
