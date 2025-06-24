@@ -4,5 +4,3 @@ function lognums(num1, num2) {
         num1--;
     }
 }
-
-lognums(4, 1)
