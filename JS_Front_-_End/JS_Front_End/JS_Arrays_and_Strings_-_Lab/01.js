@@ -11,5 +11,3 @@ function sumNums(array) {
     console.log(firstNum + lastNum);
     
 }
-
-sumNums([20, 30, 40])
