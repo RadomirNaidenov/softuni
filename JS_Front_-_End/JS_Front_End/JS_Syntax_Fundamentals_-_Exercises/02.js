@@ -48,4 +48,3 @@ function calcPrice(peopleCount, groupType, day) {
     console.log(`Total price: ${totalPrice.toFixed(2)}`);
     
 }
-

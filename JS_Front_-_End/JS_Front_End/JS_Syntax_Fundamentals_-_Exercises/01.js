@@ -26,4 +26,3 @@ function determinesPersonType(age) {
     console.log(personType);
     
 }
-
